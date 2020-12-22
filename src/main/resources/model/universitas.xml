@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+      "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	
+	<class name="com.lawencon.springdb.model.Universitas" table="universitas">
+		
+		<id name="id">
+			<column name="id" />
+			<generator class="identity" />	
+		</id>
+				
+		<property name="nama">
+			<column name="nama" length="30" />
+		</property>
+		
+	</class>
+	
+</hibernate-mapping>
